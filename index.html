@@ -206,17 +206,6 @@ h2.section-title .num{font-family:var(--mono); font-size:.52em; color:var(--gold
 }
 .band blockquote p b{font-style:normal; color:var(--crimson); font-weight:600}
 
-/* corrections table */
-.fixes{width:100%; border-collapse:collapse; margin:2.4rem 0 0; font-size:.92rem; position:relative; z-index:1}
-.fixes caption{
-  text-align:left; font-family:var(--mono); font-size:.66rem; text-transform:uppercase;
-  letter-spacing:.12em; color:var(--muted); padding-bottom:.7rem;
-}
-.fixes th,.fixes td{text-align:left; padding:.74em .9em; border-bottom:1px solid color-mix(in srgb, var(--line-strong) 85%, transparent); vertical-align:top}
-.fixes th{font-family:var(--mono); font-size:.62rem; text-transform:uppercase; letter-spacing:.11em; color:var(--muted); font-weight:400}
-.fixes .remembered{color:var(--muted); text-decoration:line-through; text-decoration-color:color-mix(in srgb, var(--crimson) 60%, transparent); text-decoration-thickness:1px}
-.fixes .actual{color:var(--crimson); font-weight:600}
-.fixes td:last-child{color:var(--ink-soft); font-size:.86rem}
 
 /* ============================================================
    PARTS + MOVES
@@ -415,24 +404,6 @@ footer.colophon{
       <blockquote>
         <p>“Like, it’s not about being right. I wouldn’t <b>accept</b> something I didn’t understand because I feel like that’s a form of <b>lying</b> — and it takes consent from other people.”</p>
       </blockquote>
-      <table class="fixes">
-        <caption>Why this is the passage a paraphrase lands on — and the two words that go missing in memory</caption>
-        <thead>
-          <tr><th scope="col">Remembered as</th><th scope="col">Actually said</th><th scope="col">What turns on it</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><span class="remembered">“I wouldn’t believe something I do not understand”</span></td>
-            <td><span class="actual">“I wouldn’t accept something I didn’t understand”</span></td>
-            <td><em>Accept</em> is the whole point: he is not talking about what he believes in his head but about what he will publicly agree to. Belief is not voluntary; assent is.</td>
-          </tr>
-          <tr>
-            <td><span class="remembered">“that is a form of line”</span></td>
-            <td><span class="actual">“that’s a form of lying”</span></td>
-            <td>The misheard word is the thesis. If it were <em>a line</em>, the complaint would be about a boundary being crossed; as <em>lying</em>, it is about a falsehood he would be manufacturing.</td>
-          </tr>
-        </tbody>
-      </table>
     </section>
 
     <!-- ============================ PART I ============================ -->
@@ -873,7 +844,7 @@ footer.colophon{
             was pulled audio-only and transcribed four times by four engines — hosted <code>whisper-large-v3-turbo</code>,
             hosted <code>whisper-large-v3</code> (non-turbo), local <code>faster-whisper</code> <code>medium</code>,
             and local <code>openai-whisper</code> <code>small</code> on the relevant window. All four agree on every
-            content word of the passages quoted here, including the two words that memory tends to lose.
+            content word of the passages quoted here.
           </p>
           <p class="caveat">
             Timestamps come from the timestamped transcript, not from the platform. Quotations here are verbatim
